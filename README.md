@@ -123,4 +123,7 @@ This project is open source.
 
 ## Author
 
-Built with Python and Tkinter. Contributions and issues are welcome.
+Built by:
+- **Noura Alsubaie**
+- **Lina Alghamdi**
+. Contributions and issues are welcome.
