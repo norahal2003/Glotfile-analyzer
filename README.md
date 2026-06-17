@@ -1,4 +1,4 @@
-# ✳ POLYGLOT TOOL
+#  POLYGLOT TOOL
 
 >  **polyglot files** — single files that are valid in multiple formats simultaneously.
 
