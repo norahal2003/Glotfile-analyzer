@@ -124,6 +124,8 @@ This project is open source.
 ## Author
 
 Built by:
+
 - **Noura Alsubaie**
 - **Lina Alghamdi**
+
 . Contributions and issues are welcome.
