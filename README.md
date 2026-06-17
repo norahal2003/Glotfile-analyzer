@@ -6,13 +6,13 @@
 
 ## What is a Polyglot File?
 
-A polyglot file is a file that conforms to more than one file format at the same time. For example, a single file can be opened as a PNG image, played as an MP4 video, read as a PDF document, and extracted as a ZIP archive — all without modification. This tool lets you both **create** and **analyze** such files with a clean graphical interface.
+A polyglot file is a file that conforms to more than one file format at the same time. For example, a single file can be opened as a PNG image, played as an MP4 video, read as a PDF document, and extracted as a ZIP archive — all without modification. This tool lets you both **create** and **analyze** such files with a clean graphical interface. And this is the website https://www.glotfiles.dev/ for make glotfile. 
 
 ---
 
 ## Features
 
-###  Analyze and Extract 
+###  Analyze & Extract 
 - Load any file and automatically detect all hidden formats inside it
 - Detects: PNG, JPEG, GIF, WebP, ICO, PDF, MP4, AVI, MKV, ZIP, RAR, 7z, MP3, WAV
 - Displays offset position, file size, and format type for each detected layer
@@ -30,7 +30,7 @@ A polyglot file is a file that conforms to more than one file format at the same
   - `Image + ZIP`
 - Automatically corrects MP4 chunk offsets (`stco`/`co64` boxes) so video playback works correctly after embedding
 - Saves the output as a `.png` file that secretly contains all other formats
-- this is the like for the website create glot file https://www.glotfiles.dev/
+
 ---
 
 ## Requirements
@@ -38,7 +38,7 @@ A polyglot file is a file that conforms to more than one file format at the same
 - Python 3.7+
 - Tkinter (usually included with Python — if not, install `python3-tk`)
 
-The tool uses only Python's standard library and the app recommend is pycharm.
+No third-party libraries are required. The tool uses only Python's standard library.Recommend use pycharm. 
 
 ---
 
@@ -47,7 +47,7 @@ The tool uses only Python's standard library and the app recommend is pycharm.
 ```bash
 git clone https://github.com/norahal2003/Glotfile-analyzer.git
 cd polyglot-tool
-python our_analyze_polyglot_tool_.py
+python main.py
 ```
 
 ---
@@ -56,8 +56,8 @@ python our_analyze_polyglot_tool_.py
 
 ### Analyzing a File
 
-1. Open the app and go to the **ANALYZE** 
-2. Click **BROWSE** and select the file that been create by glotfile
+1. Open the app and go to the **ANALYZE** tab
+2. Click **BROWSE** and select any file
 3. The tool will scan the file and display all detected formats in the log
 4. You will be prompted to choose a folder where the extracted files will be saved
 
@@ -102,8 +102,52 @@ The output file is saved as a `.png`. To access the other embedded formats, rena
 
 ```
 polyglot-tool/
-└── our_analyze_polyglot_tool_.py   # Main application (single file)
+├── our_analyze_polyglot_tool_.py   # Main application (single file)
+├── README.md
+└── screenshots/
+    ├── analyze_empty.png
+    ├── file_picker.png
+    ├── analyze_result.png
+    └── extracted_files.png
 ```
+
+---
+
+## Implementation and Testing — Analyze interface 
+
+This section demonstrates the Analyze tab in action using a real polyglot file.
+
+---
+
+### Step 1 — Tool Interface Analyze 
+
+The Analyze tab on launch, ready to accept any file for scanning.
+
+![Analyze Tab - Empty](screenshots/analyze_empty.png)
+
+---
+
+### Step 2 — Select the Polyglot File
+
+A file named `filecreatebypolyglot` is selected from the project folder using the Browse dialog.
+
+![File Picker](screenshots/file_picker.png)
+
+---
+
+### Step 3 — Analysis Result
+
+The tool scans the file and detects **2 formats** embedded inside it: a PNG image (64.2 KB) and a ZIP archive (64.2 KB). Both are extracted and saved to the project folder automatically.
+
+![Analyze Result](screenshots/analyze_result.png)
+
+---
+
+### Step 4 — Extracted Files in Explorer
+
+After extraction, the project folder contains the original polyglot file alongside the two extracted files — the PNG image and the ZIP archive — confirming successful detection and extraction.
+
+![Extracted Files](screenshots/extracted_files.png)
 
 ---
 
@@ -117,15 +161,15 @@ polyglot-tool/
 
 ## License
 
-This project is open source. 
+This project is open source.
 
 ---
 
-## Author
+## Authors
 
 Built by:
 
 - **Noura Alsubaie**
 - **Lina Alghamdi**
 
-. Contributions and issues are welcome.
+Contributions and issues are welcome.
