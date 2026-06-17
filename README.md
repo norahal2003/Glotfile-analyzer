@@ -102,7 +102,7 @@ The output file is saved as a `.png`. To access the other embedded formats, rena
 
 ```
 polyglot-tool/
-├── our_analyze_polyglot_tool_.py   # Main application (single file)
+├── our main.py   # Main application (single file)
 ├── README.md
 └── screenshots/
     ├── analyze_empty.png
